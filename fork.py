@@ -45,7 +45,7 @@ def timed_exec(commandline, timeout):
         popenobj = subprocess.Popen(commandline, stdin=subprocess.PIPE)
         pollobj = select.poll()
         pollobj.register(popenobj.stdin, select.POLLHUP)
-        if len(pollobj.poll(timeout * 1e6)) == 0: # timeout in seconds -> milliseconds
+        if len(pollobj.poll(timeout * 1e3)) == 0: # timeout in seconds -> milliseconds
             if sys.version_info >= (2,6):
                 popenobj.kill() # Python 2.6+
             else:
