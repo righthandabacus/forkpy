@@ -1,4 +1,5 @@
 These are the code samples for HKPyUG meeting on 2017-08-14.
+Slide [here](https://www.icloud.com/keynote/0Bh-BI3N3PvatcTyoBNDfP7sA#Python%5FGIL)
 
 # Single thread
 
